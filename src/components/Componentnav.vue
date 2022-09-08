@@ -1,13 +1,13 @@
 <template>
-   <header class="header-area header-sticky">
+  <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                  <router-link class="logo">
                         <img src="assets/images/logo.png" alt="">
-                    </a>
+                  </router-link >
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
                     <div class="search-input">
@@ -19,11 +19,11 @@
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="browse.html" class="active">Browse</a></li>
-                        <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
-                        <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                        <router-link to="/index">Home</router-link>
+                        <router-link to="/browse" class="active">Browse</router-link>
+                        <router-link to="/details">Details</router-link>
+                        <router-link to="/streams">Streams</router-link>
+                        <router-link  to="/profile">Profile <img src="@/assets/images/profile-header.jpg" alt=""></router-link>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -34,6 +34,7 @@
         </div>
     </div>
   </header>
+   
 </template>
 
 <script>

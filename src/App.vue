@@ -5,9 +5,11 @@
   <router-view/>
 </template>
 <script>
-  import ComponentnavVue from "./components/Componentnav.vue";
+  import Componentnav from "./components/Componentnav.vue";
   export default{
- name: ComponentnavVue
+     components:{
+      Componentnav
+     } 
 
   }
 </script>
